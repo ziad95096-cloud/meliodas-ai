@@ -5,10 +5,10 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import rateLimit from 'express-rate-limit';
 
-import connectDB from './src/config/db.js';
-import authRoutes from './src/routes/auth.js';
-import chatRoutes from './src/routes/chat.js';
-import paymentRoutes from './src/routes/payment.js';
+import connectDB from './config/db.js';
+import authRoutes from './routes/auth.js';
+import chatRoutes from './routes/chat.js';
+import paymentRoutes from './routes/payment.js';
 
 dotenv.config();
 
