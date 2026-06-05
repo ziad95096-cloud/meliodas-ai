@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meliodas AI Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-dark-bg text-white h-screen flex flex-col">
+  <div class="flex flex-1 overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 glass-sidebar p-4 flex flex-col">
+      <div class="flex items-center gap-2 mb-8">
+        <span class="text-2xl">⚔️</span>
+        <span class="font-bold text-gold">Meliodas AI</span>
+      </div>
+      <button id="newChatBtn" class="bg-gold/20 border border-gold rounded-lg p-2 mb-6 hover:bg-gold/40">➕ New Chat</button>
+      <div id="chatHistoryList" class="flex-1 overflow-y-auto space-y-2 text-sm">
+        <!-- history loads here -->
+      </div>
+      <div class="mt-4 pt-4 border-t border-gray-700">
+        <div id="userStatus" class="text-xs text-gray-400"></div>
+        <button id="logoutBtn" class="text-red-400 text-sm mt-2">Logout</button>
+      </div>
+    </aside>
+
+    <!-- Chat Main -->
+    <main class="flex-1 flex flex-col">
+      <div id="messagesArea" class="flex-1 overflow-y-auto p-4 space-y-4"></div>
+      <div class="border-t border-gray-700 p-4 bg-dark-card">
+        <div class="flex gap-2">
+          <textarea id="messageInput" rows="1" placeholder="Ask Meliodas about code or anime..." class="flex-1 bg-gray-800 rounded-lg p-3 resize-none focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+          <button id="sendBtn" class="bg-gold text-black px-4 rounded-lg font-bold">Send</button>
+          <button id="voiceBtn" class="bg-gray-700 px-3 rounded-lg text-xl">🎤</button>
+          <input type="file" id="fileInput" class="hidden" accept="image/*,text/plain">
+          <button id="fileBtn" class="bg-gray-700 px-3 rounded-lg text-xl">📎</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/js/chat.js"></script>
+</body>
+</html>

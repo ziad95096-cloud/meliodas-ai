@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Meliodas AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-dark-bg text-white">
+  <nav class="glass-nav p-4 flex justify-between max-w-7xl mx-auto mt-4 rounded-2xl">
+    <a href="/" class="text-2xl font-bold text-gold">⚔️ Meliodas AI</a>
+    <div>
+      <a href="chat.html" class="text-gold hover:underline">Chat</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold text-center">Choose Your <span class="text-gold">Adventure</span></h2>
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <!-- Boar Hat (Free) -->
+      <div class="pricing-card p-6 rounded-2xl text-center">
+        <h3 class="text-2xl font-bold">🍺 Boar Hat</h3>
+        <p class="text-gray-400 mt-2">Free</p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✅ Text-only chat</li>
+          <li>✅ Slower response</li>
+          <li>✅ Daily limit (50 msgs)</li>
+        </ul>
+        <button class="mt-8 w-full py-2 border border-gold rounded-full" id="freeBtn">Current Plan</button>
+      </div>
+      <!-- Demon Mark ($9) -->
+      <div class="pricing-card premium p-6 rounded-2xl text-center border-gold">
+        <h3 class="text-2xl font-bold">😈 Demon Mark</h3>
+        <p class="text-gold text-2xl font-bold">$9<span class="text-sm">/mo</span></p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✅ Faster streaming</li>
+          <li>✅ File/image uploads</li>
+          <li>✅ Priority queue</li>
+        </ul>
+        <button data-tier="demon_mark" class="subscribe-btn mt-8 w-full py-2 bg-gold text-black rounded-full font-semibold">Subscribe</button>
+      </div>
+      <!-- Full Counter ($29) -->
+      <div class="pricing-card p-6 rounded-2xl text-center">
+        <h3 class="text-2xl font-bold">🌀 Full Counter</h3>
+        <p class="text-gold text-2xl font-bold">$29<span class="text-sm">/mo</span></p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✅ Ultimate speed</li>
+          <li>✅ Voice chat + audio</li>
+          <li>✅ Unlimited everything</li>
+        </ul>
+        <button data-tier="full_counter" class="subscribe-btn mt-8 w-full py-2 bg-gold text-black rounded-full font-semibold">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <script src="/js/pricing.js"></script>
+</body>
+</html>
